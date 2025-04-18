@@ -1,20 +1,55 @@
-Welcome to the NextJS base template bootstrapped using the create-next-app. This template supports TypeScript, but you can use normal JavaScript as well.
+# AI Chatbot App
 
-Getting Started
-Hit the run button to start the development server.
+A modern chat application built with Next.js, TypeScript, and the Vercel AI SDK that allows users to interact with OpenAI's GPT models.
 
-You can start editing the page by modifying pages/index.tsx. The page auto-updates as you edit the file.
+## Features
 
-API routes can be accessed on /api/hello. This endpoint can be edited in pages/api/hello.ts.
+- Real-time chat interface with streaming responses
+- Support for both GPT-4 and GPT-3.5-turbo models
+- Markdown rendering for AI responses
+- Code syntax highlighting
+- Model selection persistence
+- Error handling and loading states
+- Responsive design with Tailwind CSS
 
-The pages/api directory is mapped to /api/*. Files in this directory are treated as API routes instead of React pages.
+## Prerequisites
 
-Learn More
-To learn more about Next.js, take a look at the following resources:
+- Node.js 18.17 or later
+- OpenAI API key
 
-Next.js Documentation - learn about Next.js features and API.
-Learn Next.js - an interactive Next.js tutorial.
-Productionizing your Next App
-To make your next App run smoothly in production make sure to deploy your project with Repl Deployments!
+## Setup
 
-You can also produce a production build by running npm run build and changing the run command to npm run start.
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Create a `.env.local` file in the root directory with your OpenAI API key:
+   ```
+   OPENAI_API_KEY=your_api_key_here
+   ```
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+## Usage
+
+1. Open your browser and navigate to `http://localhost:3000`
+2. Select your preferred GPT model from the dropdown
+3. Start chatting with the AI assistant
+4. Use the "Stop" button to halt ongoing responses
+5. Enjoy the markdown-formatted responses with syntax highlighting for code blocks
+
+## Technologies Used
+
+- Next.js 14 (App Router)
+- TypeScript
+- Vercel AI SDK
+- Tailwind CSS
+- React Markdown
+- React Syntax Highlighter
+
+## License
+
+MIT
